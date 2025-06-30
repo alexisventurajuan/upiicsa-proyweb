@@ -1,0 +1,84 @@
+:root { 
+    --color5: #0000;
+    --color4: #582b11;
+    --color3: #cc5803;
+    --color2: #ff9505;
+    --color1: #e7d7c9;
+}
+
+/* ===== Sección Categorías ===== */
+.categorias {
+  background-color: var(--color2);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.categorias h2 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--color4);
+}
+
+/* Lista de botones de categoría en formato de tarjetas grandes */
+.categoria a{
+  display: block;
+  background-color: var(--color3);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.categoria a:hover {
+  background-color: var(--color4);
+  transform: translateY(-5px);
+}
+
+.categorias_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.categoria {
+  background-color: var(--color1);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.categoria p::first-letter {
+  font-weight: bold;
+  color: var(--color3);
+  font-size: 1.5rem;
+}
+
+.categoria img {
+  padding-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .categorias h2 {
+    font-size: 2.2rem;
+  }
+
+  .categorias ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categorias ul li a {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+}

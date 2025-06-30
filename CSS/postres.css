@@ -1,0 +1,70 @@
+:root {
+  --color4: #582b11;
+  --color3: #cc5803;
+  --color2: #ff9505;
+  --color1: #e7d7c9;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color4);
+  margin-bottom: 3rem;
+}
+
+.receta_tarjeta {
+  display: flex;
+  align-items: center;
+  background-color: var(--color1);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.receta_tarjeta img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.receta_contenido {
+  flex: 1;
+  text-align: left;
+}
+
+.receta_contenido h3 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  color: var(--color3);
+}
+
+.receta_contenido p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .receta_tarjeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .receta_tarjeta img {
+    width: 100%;
+    height: auto;
+  }
+
+  .receta_contenido h3 {
+    font-size: 1.6rem;
+  }
+
+  main h2 {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,140 @@
+:root {
+  --color4: #582b11;
+  --color3: #cc5803;
+  --color2: #ff9505;
+  --color1: #e7d7c9;
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  color: #491b1b;
+  scroll-behavior: smooth;
+}
+
+.contenedor_principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: var(--color3);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #491b1b;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+
+.logo2 {
+  height: 20px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.boton_normal {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 0.8rem;
+  background-color: var(--color3);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton_normal:hover {
+  background-color: var(--color4);
+}
+
+.boton_normal2 {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--color4);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.boton_normal2:hover {
+  background-color: var(--color3);
+}
+
+footer {
+  background-color: var(--color3);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--color2);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+/* Responsive para dispositivos moviles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
